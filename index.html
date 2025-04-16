@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
-    <!-- <script src="rockPaperScissors.js"></script> -->
+    <script src="game.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,13 +17,13 @@
                     <p class="score-header"><u>Player Score</u></p>
                     <p class="score-count">0</p>
                     <p class="score-header"><u>Player Choice</u></p>
-                    <p class="choice"></p>
+                    <p class="choice" id="human-choice"></p>
                 </div>
                 <div class="score-column">
                     <p class="score-header"><u>Computer Score</u></p>
                     <p class="score-count">0</p>
                     <p class="score-header"><u>Computer Choice</u></p>
-                    <p class="choice"></p>
+                    <p class="choice" id="computer-choice"></p>
                 </div>
                 
             </div>
@@ -31,15 +31,15 @@
         <div class="inputs">
             <div class="card">
                 <img src="/images/rock.svg">
-                <button>Rock</button>
+                <button id="rock">Rock</button>
             </div>
             <div class="card">
                 <img src="/images/paper.svg">
-                <button>Paper</button>
+                <button id="paper">Paper</button>
             </div>
             <div class="card">
                 <img src="/images/scissors.svg">
-                <button>Scissors</button>
+                <button id="scissors">Scissors</button>
             </div>
         </div>
     </div>
