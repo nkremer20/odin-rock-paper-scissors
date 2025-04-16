@@ -18,6 +18,13 @@ body {
 
 h1 {
     font-size: 50px;
+    width: 100%;
+    background-color: grey;
+    margin-top: 0;
+    text-align: center;
+    padding: 10px 0 10px;
+    border-bottom: 3px blue solid;
+    color: white;
 }
 
 .scoreboard {
@@ -50,13 +57,18 @@ h3 {
 }
 
 .score-header {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
 .score-count {
     font-size: 50px;
     margin: 10px;
+}
+
+.choice {
+    margin-top: 0;
+    font-size: 30px;
 }
 
 img {
@@ -76,7 +88,7 @@ img {
     padding: 25px;
     border-radius: 25px;
     width: 80px;
-    background-color: rgb(116, 116, 116);
+    background-color: grey;
 }
 
 button {
