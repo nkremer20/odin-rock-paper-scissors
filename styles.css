@@ -16,7 +16,7 @@ body {
     height: 100%;
 }
 
-h1 {
+.title {
     font-size: 50px;
     width: 100%;
     background-color: grey;
@@ -106,4 +106,13 @@ button {
 button:hover {
     background-color: blue;
     color: white;
+}
+
+.winner {
+    text-align: center;
+
+}
+
+.new-game {
+    margin: 0 35% 20px;
 }

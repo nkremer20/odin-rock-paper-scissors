@@ -58,12 +58,25 @@ function checkWinner(human, computer) {
 
 function winnerDisplay(message) {
     const scoreboard = document.querySelector('.scoreboard');
-    
+    const winnerMessage = document.createElement('h1');
+    winnerMessage.textContent = message;
+    winnerMessage.classList.add('winner');
+    const newGame = document.createElement('button');
+    newGame.textContent = "New Game";
+    newGame.classList.add('new-game');
+
 
     while (scoreboard.lastElementChild) {
         scoreboard.removeChild(scoreboard.lastElementChild);
     }
-}
+
+    scoreboard.appendChild(winnerMessage);
+    scoreboard.appendChild(newGame);
+
+    newGame.addEventListener('click', () => {
+        window.location.reload();
+    });
+};
 
 choiceButtons.forEach((button) => {
     button.addEventListener('click', () => {
