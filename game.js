@@ -56,6 +56,15 @@ function checkWinner(human, computer) {
     }
 };
 
+function winnerDisplay(message) {
+    const scoreboard = document.querySelector('.scoreboard');
+    
+
+    while (scoreboard.lastElementChild) {
+        scoreboard.removeChild(scoreboard.lastElementChild);
+    }
+}
+
 choiceButtons.forEach((button) => {
     button.addEventListener('click', () => {
         const humanSelection = button.id;
@@ -66,5 +75,11 @@ choiceButtons.forEach((button) => {
         computerChoice.textContent = computerSelection.toUpperCase();
 
         checkWinner(humanSelection, computerSelection);
+
+        if (humanScore === 5) {
+            winnerDisplay('You Won!');
+        } else if (computerScore === 5) {
+            winnerDisplay('Computer Won!');
+        }
     })
 });
